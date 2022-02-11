@@ -1,0 +1,39 @@
+{
+	"name": "Hack_Qualitor",
+	"manifest_version":2,
+	"description": "Extensão voltada para facilitar e agilizar o Atendimento no sistema Qualitor.",
+	"version": "4.0",
+	"author": "Marlom C. Lucas",
+	"browser_action":{
+		"default_popup": "menu.html",
+		"default_icon": "img/icon.png"
+	},
+	"options_ui":{
+	"page": "options.html",
+	"open_in_tab": false
+  },
+    "permissions": [
+	"storage"
+],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.centraldesolucoes.unimedpoa.com.br/*"
+			],
+			"js": [
+				"js/jquery-3.4.0.min.js",
+				"js/insert_html.js",
+				"js/func_menu.js",
+				"js/func_cronometro.js",
+				"js/func_data_hora.js",
+				"js/func_captura.js",
+				"js/func_compos_adicionais.js",
+				"js/func_localizacao.js",
+				"js/func_edit_categorizar.js",
+				"js/func_encerra-reghora.js"
+			],
+			"run_at": "document_idle",
+			"persistent": false
+		}
+	]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Manual</title>
+	<link rel="stylesheet" href="options.css">
+	<link rel="stylesheet" href="cssmenu.css">
+</head>
+<body>
+<div class="bg" id="container_op">
+	<div id="atendimento" onClick="atendimento()"></div>
+	<div id="esquerda">
+		<div id='cssmenu'>
+		<ul>
+		<li class='active'><a href='#'>${`< Funções />`}</a></li>
+		<li onClick="info('s1'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Adicionar Extensão</a></li>
+		<li onClick="info('s2'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Menu</a></li>
+		<li onClick="info('s3'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Cronômetro</a></li>
+		<li onClick="info('s4'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Categorização automática</a></li>
+		<li onClick="info('s5'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Função Auto Preencher</a></li>
+		<li onClick="info('s6'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Botão "Editar"</a></li>
+		<li onClick="info('s7'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Captura automática</a></li>
+		<li onClick="info('s8'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Encerramento e Status</a></li>
+		<li onClick="info('s9'); document.getElementById('pop').style.display='block'; document.getElementById('DIVDESABILITATELA').style.display='block';"><a href='#'>Registro de Horas</a></li>
+		</ul>
+		</div>
+	</div>
+<div id="DIVDESABILITATELA" style="width:100%; height:100%; top:0px; left:0px;" onClick="document.getElementById('pop').style.display='none'; document.getElementById('DIVDESABILITATELA').style.display='none';"></div>
+<div id="pop">
+	<table width="100%" cellpadding="0" cellspacing="0" class="WINDOWHEADER">
+		<tbody>
+			<tr>
+				<td width="100%" height="20" ><font class="WINDOWTITLE">Manual</font></td>
+				<td width="42" height="20" align="right">
+					<img src="img/btn_close.gif" onClick="document.getElementById('pop').style.display='none'; document.getElementById('DIVDESABILITATELA').style.display='none';" class="WINDOWCLOSE" alt="Fechar" title="Fechar"/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="WINDOWCONTENT">
+		<tbody>
+			<td valign="top" class="WINDOWCONTENTBORDER">
+				<fieldset id='titulo' class="FIELDSET">
+					<p>Titulo</p>
+				</fieldset>
+				<fieldset id='conteudo' class="FIELDSET">
+					<p>Conteudo</p>
+				</fieldset>
+			</td>
+		</tbody>
+	</table>
+</div>
+</div>
+<script src="dados.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+	"name": "Teste",
+	"manifest_version":2,
+	"description": "Extensão Teste Fedex.",
+	"version": "1.0",
+	"author": "Marlom C. Lucas",
+	"browser_action":{
+		"default_icon": "img/icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://pdsm.service-now.com/*"
+			],
+			"js": [
+				"js/insert_html.js",
+				"js/insert_tag.js",
+				"js/login.js"
+			],
+			"run_at": "document_idle",
+			"persistent": false
+		},
+		{
+			"matches": [
+				"*://purpleid.okta.com/login/*"
+			],
+			"js": [
+				"js/login.js"
+			],
+			"run_at": "document_idle",
+			"persistent": false
+		}
+	]
+}

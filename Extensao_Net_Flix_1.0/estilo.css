@@ -1,0 +1,23 @@
+.accordions{
+    width:120px;
+}
+.accordion-item input{
+	display:none;
+}
+.accordion-item label{
+    display:block;
+    cursor:pointer;
+}
+.accordion-content{
+    height:0px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+img{
+	cursor:pointer;
+}
+
+[id^=accordion]:hover ~ .accordion-content {
+    height: 45px;
+	margin-bottom: 2px;
+}

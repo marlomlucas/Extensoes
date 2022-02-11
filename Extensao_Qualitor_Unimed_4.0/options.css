@@ -1,0 +1,109 @@
+body{
+	background-color:#D9E0E5;
+	margin:0%;
+}
+.bg{
+	position:center;
+	width:1366px;
+	height:590px;
+	background-color:#D9E0E5;
+	background-repeat:no-repeat;
+}
+/* CSS Pagina Options */
+
+#container_op{
+	background-image: url("img/bg_abertura.png");
+}
+#atendimento{
+	float:left;
+	margin-left:20.6%;
+	margin-top:7.8%;
+	width:72px;
+	height:21px;
+	cursor:pointer;
+	border:1px solid black;
+	border-radius:5px;
+}
+/* CSS Pagina Atendimento */
+#container_at{
+	background-image: url("img/bg_atendimento.png");
+}
+#abertura{
+	float:left;
+	margin-left:0.5%;
+	margin-top:8%;
+	width:56px;
+	height:20px;
+	border:1px solid black;
+	border-radius:5px;
+}
+/* CSS POP Oculto */
+#titulo{
+	font-weight: bold;
+	text-align: center;
+	font-family:Verdana, Arial;
+	font-size:18px;
+}
+#conteudo{
+	word-wrap: break-word;
+	text-align:left;
+	color:#000000d1;
+	text-indent:50px;
+	font-family:Verdana, Arial;
+	font-size:13px;
+}
+.WINDOWTITLE { /*Titulo da Janela "Menu"*/
+	font-weight: bold;
+	padding-left: 10px;
+	color: #444;
+	font-size: 11px;
+}
+#pop{
+	margin-left:16%;
+	margin-right:5%;
+	display:none;
+	position:absolute;
+	top:90px;
+}
+#DIVDESABILITATELA{
+    background: #000;
+    display:none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    opacity: .10;
+}
+.WINDOWCONTENT, .WINDOWHEADER {
+	border: 1px solid #666;
+}
+.WINDOWHEADER, .WINDOWCONTENT {
+	background: #eaeeef;
+}
+.WINDOWCONTENT {
+	border-top: 0;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.WINDOWCLOSE {
+	margin-right: 6px;
+	margin-top: -14px;
+	position: relative;
+	cursor: pointer;
+}
+.WINDOWHEADER {
+	background: url('img/windowheader.gif') repeat-x;
+	border-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+.FIELDSET {
+	background: #FCFCFC;
+	border: 1px solid #9a9a9a;
+	margin: 5px;
+	margin-top:0;
+	padding: 5px;
+	border-radius: 5px;
+}

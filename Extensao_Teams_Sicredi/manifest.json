@@ -1,0 +1,29 @@
+{
+	"name": "Teste",
+	"manifest_version":2,
+	"description": "Teste",
+	"version": "0.0.1",
+	"author": "Marlom C. Lucas",
+	"browser_action":{
+		"default_popup": "menu.html",
+		"default_icon": "img/icon.png"
+	},
+    "permissions": [
+		"activeTab",
+		"clipboardWrite"
+		
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://teams.microsoft.com/*"
+			],
+			"js": [
+				"js/jquery-3.4.0.min.js",
+				"js/insert_html.js"
+			],
+			"run_at": "document_idle",
+			"persistent": false
+		}
+	]
+}
